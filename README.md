@@ -32,7 +32,7 @@
 * The admin can update the salaries based on a ratio.
 * The App was deployed to Heroku.
 
-### ER diagram for the SQL database
+## ER diagram for the SQL database
 
 ![](img/Employees_Schema.png)
 

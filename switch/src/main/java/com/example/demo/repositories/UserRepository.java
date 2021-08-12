@@ -6,4 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface UserRepository extends CrudRepository<AppUser, Integer> {
     AppUser findByUserName(String username);
+    AppUser findByUserNameAndPassword(String username, String password);
 }
