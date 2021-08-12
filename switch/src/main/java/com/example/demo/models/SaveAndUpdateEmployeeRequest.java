@@ -10,7 +10,17 @@ public class SaveAndUpdateEmployeeRequest {
     private String  firstName, lastName;
     private float salary;
     private boolean isActive;
-    private Integer departmentId ;
+    private Integer departmentId;
+
+    public Integer getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(Integer employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    private Integer employeeId ;
 
     public SaveAndUpdateEmployeeRequest(String first_name, String last_name, float salary, boolean is_active, Integer departmentId) {
         this.firstName = first_name;

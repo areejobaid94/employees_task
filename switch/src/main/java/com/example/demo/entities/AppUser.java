@@ -93,7 +93,7 @@ public class AppUser implements UserDetails{
         isAdmin = admin;
     }
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne()
     @JoinColumn(name = "employee_id", referencedColumnName = "id")
     private Employee employee;
 
@@ -107,4 +107,8 @@ public class AppUser implements UserDetails{
 
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL,  orphanRemoval = true)
     private List<Note> note;
+
+    public List<Note> getNote() {
+        return note;
+    }
 }

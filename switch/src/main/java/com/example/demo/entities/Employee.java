@@ -10,7 +10,7 @@ public class Employee {
     private float salary;
     private boolean isActive;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne()
     @JoinColumn(name = "department_id", referencedColumnName = "id")
     private Department department;
 

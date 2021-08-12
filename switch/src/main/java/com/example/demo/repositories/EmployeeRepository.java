@@ -15,4 +15,7 @@ public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
     List<Employee> findByLastNameAndAndDepartmentAllIgnoreCase(String lastname, Department department);
     List<Employee> findByFirstNameAndDepartmentAllIgnoreCase(String firstname, Department department);
     List<Employee> findBySalaryGreaterThanEqual(float salary);
+
+    @Override
+    void deleteById(Integer integer);
 }

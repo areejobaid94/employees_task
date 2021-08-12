@@ -1,6 +1,7 @@
 package com.example.demo.controllers;
 
 import com.example.demo.entities.AppUser;
+import com.example.demo.entities.Department;
 import com.example.demo.entities.Note;
 import com.example.demo.repositories.NoteRepository;
 import com.example.demo.repositories.UserRepository;
@@ -8,10 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @RestController
 @CrossOrigin(origins= "*")
@@ -35,6 +37,21 @@ public class NoteController {
             }
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         } catch (Exception ex) {
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    // get my notes
+    @GetMapping("/notes")
+    public ResponseEntity<List<Note>> getAll() {
+        try{
+            if ((SecurityContextHolder.getContext().getAuthentication()) != null ) {
+                AppUser userDetails = userRepository.findByUserName(SecurityContextHolder.getContext().getAuthentication().getName());
+                // return all notes.
+                return new ResponseEntity(userDetails.getNote(), HttpStatus.OK);
+            }
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }catch (Exception ex) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
     }

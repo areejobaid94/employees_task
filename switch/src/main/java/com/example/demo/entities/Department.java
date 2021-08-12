@@ -35,6 +35,6 @@ public class Department {
         this.departmentName = departmentName;
     }
 
-    @OneToMany(mappedBy = "department",cascade = CascadeType.ALL,  orphanRemoval = true)
+    @OneToMany(mappedBy = "department")
     private List<Employee> employee;
 }

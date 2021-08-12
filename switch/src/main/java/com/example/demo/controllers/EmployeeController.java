@@ -76,7 +76,7 @@ public class EmployeeController {
                 // check if the user is an admin => only the admin can delete employee.
                 if(userDetails.isAdmin()){
                     // delete the employee using the PathVariable id
-                    employeeRepository.deleteById(id);
+                    employeeRepository.delete(employeeRepository.findById(id).get());
                     return new ResponseEntity(HttpStatus.OK);
                 }
             }
@@ -95,10 +95,10 @@ public class EmployeeController {
                 AppUser userDetails = userRepository.findByUserName(SecurityContextHolder.getContext().getAuthentication().getName());
                 // check if the user is an admin => only the admin can update employee.
                 if(userDetails.isAdmin()){
-                    // get the department from the database using the saveEmployeeRequest.departmentId id.
+                    // get the department from the database using the updateEmployeeRequest.departmentId id.
                     Optional<Department> department = departmentRepository.findById(updateEmployeeRequest.getDepartmentId());
-                    // get the employee from the database using the saveEmployeeRequest.getId id.
-                    Employee employeeToUpdate = employeeRepository.findById(userDetails.getEmployee().getId()).get();
+                    // get the employee from the database using the updateEmployeeRequest.getEmployeeId() id.
+                    Employee employeeToUpdate = employeeRepository.findById(updateEmployeeRequest.getEmployeeId()).get();
                     // update the employeeToUpdate's data.
                     employeeToUpdate.setDepartment(department.get());
                     employeeToUpdate.setFirstName(updateEmployeeRequest.getFirstName());
