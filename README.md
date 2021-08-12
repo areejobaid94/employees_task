@@ -31,7 +31,8 @@
 
 ![](img/Employees_Schema.png)
 
-### Table of all API's
+
+## Table of all API's
 
 | The API | HTTP request method | The Usage | Notes |
 |---------| ------------------- |-----------|-------|
