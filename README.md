@@ -39,7 +39,7 @@
 
 * Run the test by open the application in IntelliJ and run the test from there.
 
-* You can also use this postman-collection to test the APIs [Link](https://drive.google.com/file/d/1BhtA3YD0yQrvN0aeu1RFg7mVxUC_AAXv/view?usp=sharing).
+* This postman-collection may help you on testing the APIs [Link](https://drive.google.com/file/d/1BhtA3YD0yQrvN0aeu1RFg7mVxUC_AAXv/view?usp=sharing).
 
 
 ### - ER diagram for the SQL database
