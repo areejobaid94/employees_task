@@ -35,7 +35,7 @@
 
 * Start you psql server before run the code.
 
-* Run the application by run the following command in a terminal window (in the complete) directory: `./gradlew bootRun`, or you can open the application in IntelliJ and run it from there.
+* Run the application by running the following command in a terminal window (in the complete) directory: `./gradlew bootRun`, or you can open the application in IntelliJ and run it from there.
 
 * Run the test by open the application in IntelliJ and run the test from there.
 
