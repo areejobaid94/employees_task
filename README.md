@@ -10,7 +10,7 @@
 ### Check the file to learn more about the requirements =>  [Task Requirements](https://drive.google.com/file/d/1X-yXeJw4FegF9ADyUYsFUfJ8IlXXxAqN/view?usp=sharing)
 
 
-### To start using the application you need to:
+### - To start using the application you need to:
 
 * Clone the repository => `git clone https://github.com/areejobaid94/switch_task.git`
 
@@ -22,7 +22,7 @@
 
 * You can also use this postman-collection to test the APIs [Link]("https://drive.google.com/file/d/1BhtA3YD0yQrvN0aeu1RFg7mVxUC_AAXv/view?usp=sharing").
 
-### Note: I have completed the task perfectly, and I have added exta features as follows to improve the users's experince:
+### - Note: I have completed the task perfectly, and I have added exta features as follows to improve the users's experince:
 
 * I created a table for departments, and added a one-to-many relationship between the department table and the employee table.
 * I created the app_user table, and added a one-to-one relationship between the employee table and the app_user table.
@@ -40,11 +40,11 @@
 * The admin can see all the employees.
 * The admin can update the salaries based on a ratio.
 
-## ER diagram for the SQL database
+### - ER diagram for the SQL database
 
 ![](img/Employees_Schema.png)
 
-## Table of all API's
+### - Table of all API's
 
 | The API | HTTP request method | The Usage | Notes |
 |---------| ------------------- |-----------|-------|
