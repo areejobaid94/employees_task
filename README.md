@@ -60,7 +60,7 @@
 | '/employee' | Put | Update an employee | You need to login as an admin and also to send the token in the header. |
 | '/active_employee' | Get | Get all active or not active employees | You need to login as an admin and also to send the token in the header. |
 | '/employees' | Get | Get all employees | You need to login as an admin and also to send the token in the header. |
-| '/search_employees' | Get | Search for employees using firstname or/and lastname or/and department | You need to login as an admin and also to send the token in the header. |
+| '/search_employees' | Post | Search for employees using firstname or/and lastname or/and department | You need to login as an admin and also to send the token in the header. |
 | '/salary_employee' | Get | Search for employees depending on the salary, get employees with salary more than or equal a certain value | You need to login as an admin and also to send the token in the header. |
 | '/salary_employee' | Put | Update the salary using a certain ratio | You need to login as an admin and also to send the token in the header. |
 | '/notes' | Get | Get logged in employee notes | You need to login, also you need to send the token in the header. |
