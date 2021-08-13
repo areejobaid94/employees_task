@@ -20,7 +20,7 @@
 
 * Run the test by open the application in IntelliJ and run the test from there.
 
-* You can also use this postman-collection to test the APIs [Link]("Postman_Collection/Switch.postman_collection.json").
+* You can also use this postman-collection to test the APIs [Link]("https://drive.google.com/file/d/1BhtA3YD0yQrvN0aeu1RFg7mVxUC_AAXv/view?usp=sharing").
 
 ### Note: I have completed the task perfectly, and I have added exta features as follows to improve the users's experince:
 
