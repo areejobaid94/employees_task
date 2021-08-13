@@ -10,18 +10,6 @@
 ### - Check the file to learn more about the requirements =>  [Task Requirements](https://drive.google.com/file/d/1X-yXeJw4FegF9ADyUYsFUfJ8IlXXxAqN/view?usp=sharing)
 
 
-### - To start using the application you need to:
-
-* Clone the repository => `git clone https://github.com/areejobaid94/switch_task.git`
-
-* Start you psql server before run the code.
-
-* Run the application by run the following command in a terminal window (in the complete) directory: `./gradlew bootRun`, or you can open the application in IntelliJ and run it from there.
-
-* Run the test by open the application in IntelliJ and run the test from there.
-
-* You can also use this postman-collection to test the APIs [Link](https://drive.google.com/file/d/1BhtA3YD0yQrvN0aeu1RFg7mVxUC_AAXv/view?usp=sharing).
-
 ### - Note: I have completed the task perfectly, and I have added exta features as follows to improve the users's experince:
 
 * I created a table for departments, and added a one-to-many relationship between the department table and the employee table.
@@ -39,6 +27,20 @@
 * The ADMIN can search for active and not active employees.
 * The admin can see all the employees.
 * The admin can update the salaries based on a ratio.
+
+
+### - To start using the application you need to:
+
+* Clone the repository => `git clone https://github.com/areejobaid94/switch_task.git`
+
+* Start you psql server before run the code.
+
+* Run the application by run the following command in a terminal window (in the complete) directory: `./gradlew bootRun`, or you can open the application in IntelliJ and run it from there.
+
+* Run the test by open the application in IntelliJ and run the test from there.
+
+* You can also use this postman-collection to test the APIs [Link](https://drive.google.com/file/d/1BhtA3YD0yQrvN0aeu1RFg7mVxUC_AAXv/view?usp=sharing).
+
 
 ### - ER diagram for the SQL database
 
