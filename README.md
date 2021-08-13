@@ -24,7 +24,7 @@
 * The admin can also add a department.
 * The admin can see all departments.
 * After logging in, an employee can add or see his notes.
-* The ADMIN can search for active and not active employees.
+* The Admin can search for active and not active employees.
 * The admin can see all the employees.
 * The admin can update the salaries based on a ratio.
 
