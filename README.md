@@ -41,7 +41,6 @@
 * The admin can update the salaries based on a ratio.
 
 ## ER diagram for the SQL database
-
 ![](img/Employees Schema.png)
 
 ## Table of all API's
