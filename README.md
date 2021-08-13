@@ -7,7 +7,7 @@
 ### Made By: Areej Obaid
 
 
-### Check the file to learn more about the requirements =>  [Task Requirements](https://drive.google.com/file/d/1X-yXeJw4FegF9ADyUYsFUfJ8IlXXxAqN/view?usp=sharing)
+### - Check the file to learn more about the requirements =>  [Task Requirements](https://drive.google.com/file/d/1X-yXeJw4FegF9ADyUYsFUfJ8IlXXxAqN/view?usp=sharing)
 
 
 ### - To start using the application you need to:
@@ -20,7 +20,7 @@
 
 * Run the test by open the application in IntelliJ and run the test from there.
 
-* You can also use this postman-collection to test the APIs [Link]("https://drive.google.com/file/d/1BhtA3YD0yQrvN0aeu1RFg7mVxUC_AAXv/view?usp=sharing").
+* You can also use this postman-collection to test the APIs [Link](https://drive.google.com/file/d/1BhtA3YD0yQrvN0aeu1RFg7mVxUC_AAXv/view?usp=sharing).
 
 ### - Note: I have completed the task perfectly, and I have added exta features as follows to improve the users's experince:
 
