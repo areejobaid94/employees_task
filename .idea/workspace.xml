@@ -5,35 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a38a8ea-b6ae-45ca-901a-6fe37fcbda77" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/SwitchApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/DepartmentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/EmployeeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/NoteController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/AppUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Note.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/filters/JwtFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/models/LoginRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/models/SaveAndUpdateEmployeeRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/models/SearchEmployeeRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repositories/DepartmentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repositories/EmployeeRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repositories/NoteRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repositories/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/services/CustomUserDetailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/util/JwtUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/LoginTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Employees_Schema.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/switch/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/switch/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/switch/src/main/java/com/example/demo/SwitchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/switch/src/main/java/com/example/demo/SwitchApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/switch/src/main/java/com/example/demo/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/switch/src/main/java/com/example/demo/controllers/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/switch/src/main/java/com/example/demo/entities/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/switch/src/main/java/com/example/demo/entities/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/switch/src/main/java/com/example/demo/models/SaveAndUpdateEmployeeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/switch/src/main/java/com/example/demo/models/SaveAndUpdateEmployeeRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/switch/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/switch/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/switch/src/test/java/com/example/demo/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/switch/src/test/java/com/example/demo/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

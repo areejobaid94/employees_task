@@ -34,9 +34,9 @@ public class DepartmentController {
                 // check if the user is an admin => only the admin can add department.
                 if(userDetails.isAdmin()){
                     // save the department.
-                    departmentRepository.save(department);
+                    Department newDepartment = departmentRepository.save(department);
                     // return response with ok status if there is no crash.
-                    return new ResponseEntity(HttpStatus.OK);
+                    return new ResponseEntity(newDepartment,HttpStatus.OK);
                 }
             }
             return new ResponseEntity(HttpStatus.BAD_REQUEST);

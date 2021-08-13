@@ -12,7 +12,7 @@ public class Note {
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private AppUser user;
 
-    @Column(unique=true,nullable = false)
+    @Column(nullable = false)
     private String noteText;
 
     public Note(AppUser user, String noteText) {
@@ -32,7 +32,7 @@ public class Note {
     }
 
     public AppUser getUser() {
-        return user;
+        return null;
     }
 
     public void setUser(AppUser user) {

@@ -22,12 +22,13 @@ public class SaveAndUpdateEmployeeRequest {
 
     private Integer employeeId ;
 
-    public SaveAndUpdateEmployeeRequest(String first_name, String last_name, float salary, boolean is_active, Integer departmentId) {
+    public SaveAndUpdateEmployeeRequest(String first_name, String last_name, float salary, boolean is_active, Integer departmentId, Integer employeeId) {
         this.firstName = first_name;
         this.lastName = last_name;
         this.salary = salary;
         this.isActive = is_active;
         this.departmentId = departmentId;
+        this.employeeId = employeeId;
     }
 
     public SaveAndUpdateEmployeeRequest() {

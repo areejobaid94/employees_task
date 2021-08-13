@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "790a9847-b489-4b1d-a7d9-1b935aed4951",
+		"name": "Switch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"areej\",\r\n    \"password\":\"obaid\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Add Department",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmVlaiIsImV4cCI6MTYyODg3NzQ1MSwiaWF0IjoxNjI4ODQxNDUxfQ.t3V2rHU7T9-UcQS_OLkRNnbNbbBRQI75w0xxb3xH1LE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"departmentName\":\"any thing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/department",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Department",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmVlaiIsImV4cCI6MTYyODg3NzQ1MSwiaWF0IjoxNjI4ODQxNDUxfQ.t3V2rHU7T9-UcQS_OLkRNnbNbbBRQI75w0xxb3xH1LE",
+						"type": "text"
+					}
+				],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmVlaiIsImV4cCI6MTYyODg3NzQ1MSwiaWF0IjoxNjI4ODQxNDUxfQ.t3V2rHU7T9-UcQS_OLkRNnbNbbBRQI75w0xxb3xH1LE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"areej\",\r\n    \"lastName\":\"obaid\",\r\n    \"salary\":1000,\r\n    \"active\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmVlaiIsImV4cCI6MTYyODg3NzQ1MSwiaWF0IjoxNjI4ODQxNDUxfQ.t3V2rHU7T9-UcQS_OLkRNnbNbbBRQI75w0xxb3xH1LE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"areej1\",\r\n    \"lastName\":\"obaid\",\r\n    \"salary\":1000,\r\n    \"active\":false,\r\n    \"departmentId\":1,\r\n    \"employeeId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmVlaiIsImV4cCI6MTYyODg3NzQ1MSwiaWF0IjoxNjI4ODQxNDUxfQ.t3V2rHU7T9-UcQS_OLkRNnbNbbBRQI75w0xxb3xH1LE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/employee/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"employee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search By Active State",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "All Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/employees?Authorization",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"employees"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Search For Employee By Salary",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmVlaiIsImV4cCI6MTYyODg3NzQ1MSwiaWF0IjoxNjI4ODQxNDUxfQ.t3V2rHU7T9-UcQS_OLkRNnbNbbBRQI75w0xxb3xH1LE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/salary_employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"salary_employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Salary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Add Note",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmVlaiIsImV4cCI6MTYyODg3NzQ1MSwiaWF0IjoxNjI4ODQxNDUxfQ.t3V2rHU7T9-UcQS_OLkRNnbNbbBRQI75w0xxb3xH1LE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"noteText\":\"any thing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/note",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"note"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get My Notes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/employees?Authorization",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"employees"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

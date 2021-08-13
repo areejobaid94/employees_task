@@ -32,8 +32,8 @@ public class NoteController {
             if ((SecurityContextHolder.getContext().getAuthentication()) != null ) {
                 AppUser userDetails = userRepository.findByUserName(SecurityContextHolder.getContext().getAuthentication().getName());
                 note.setUser(userDetails);
-                noteRepository.save(note);
-                return new ResponseEntity(HttpStatus.OK);
+                note = noteRepository.save(note);
+                return new ResponseEntity(note,HttpStatus.OK);
             }
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         } catch (Exception ex) {

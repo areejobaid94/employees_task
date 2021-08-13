@@ -39,6 +39,9 @@ public class EmployeeController {
             // check the authentication
             if ((SecurityContextHolder.getContext().getAuthentication()) != null ) {
                 AppUser userDetails = userRepository.findByUserName(SecurityContextHolder.getContext().getAuthentication().getName());
+                System.out.println(SecurityContextHolder.getContext().getAuthentication().getName());
+                System.out.println("userDetails");
+
                 // check if the user is an admin => only the admin can add employee.
                 if(userDetails.isAdmin()){
                     // get the department from the database using the saveEmployeeRequest.departmentId.
@@ -48,7 +51,7 @@ public class EmployeeController {
                     // save the employee.
                     Employee savedEmployee = employeeRepository.save(employee);
                     // generate username using firstname and lastname.
-                    String userName = savedEmployee.getFirstName() + savedEmployee.getLastName();
+                    String userName = savedEmployee.getFirstName() + savedEmployee.getLastName() + ((int) (Math.random() * 3000));
                     // generate password using firstname, lastname and random number.
                     String password =userName + (int)(Math.random() * 1000);
                     // create new user.
@@ -125,9 +128,9 @@ public class EmployeeController {
                 AppUser userDetails = userRepository.findByUserName(SecurityContextHolder.getContext().getAuthentication().getName());
                 // check if the user is an admin => only the admin can search by active state.
                 if(userDetails.isAdmin()){
-                // find employees by using isActive RequestParam.
-                List<Employee> allEmployee = employeeRepository.findByIsActive(isActive);
-                // return all employees.
+                    // find employees by using isActive RequestParam.
+                    List<Employee> allEmployee = employeeRepository.findByIsActive(isActive);
+                    // return all employees.
                 return new ResponseEntity(allEmployee, HttpStatus.OK);
                 }
             }
@@ -158,7 +161,7 @@ public class EmployeeController {
     }
 
     // search for employees per department and/or by name.
-    @GetMapping("/search_employees")
+    @PostMapping("/search_employees")
     public ResponseEntity<List<Employee>> search(@RequestBody SearchEmployeeRequest employee) {
         try{
             if ((SecurityContextHolder.getContext().getAuthentication()) != null ) {
@@ -228,11 +231,38 @@ public class EmployeeController {
                     float newSalary = employeeToUpdate.getSalary() + employeeToUpdate.getSalary() * ratio;
                     // update the employee data.
                     employeeToUpdate.setSalary(newSalary);
+                    employeeToUpdate = employeeRepository.save(employeeToUpdate);
                     return new ResponseEntity(employeeToUpdate, HttpStatus.OK);
                 }
             }
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }catch (Exception ex) {
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    // Adding Admin for testing
+    @PostMapping("/admin")
+    public ResponseEntity<AppUser> addAdmin() {
+        try{
+            // Save new department.
+            Department department =  departmentRepository.save(new Department("any thing"));
+            // create new employee using the request data.
+            Employee employee = new Employee("areej","obaid",500, true,department);
+            // save the employee.
+             Employee savedEmployee = employeeRepository.save(employee);
+             // generate default username.
+             String userName = "areej";
+             // generate default password.
+            String password ="obaid";
+            // create new user.
+            AppUser user = new AppUser(userName, password,savedEmployee);
+            // save the user.
+            user.setAdmin(true);
+            user = userRepository.save(user);
+            // return the user
+            return new ResponseEntity(user, HttpStatus.OK);
+        } catch (Exception ex) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
     }
