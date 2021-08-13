@@ -42,7 +42,7 @@
 
 ## ER diagram for the SQL database
 
-![](img/Employees_Schema.png)
+![](./img/Employees Schema.png)
 
 ## Table of all API's
 
